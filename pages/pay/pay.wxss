@@ -1,0 +1,123 @@
+/* pages/pay/pay.wxss */
+.pay{
+    width:100%;
+    background-color: #fff;
+}
+.ui_line{
+    height: 23.4rpx;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    clear: both;
+}
+/* 收货地址 */
+.shouhuo{
+    width:100%;
+    border: 1px solid #E3E3E3;
+}
+.shouhuo_top{
+    height:9.36rpx;
+    background: #fff url(https://s1.mi.com/m/images/m/bd1.png) 0 0 repeat-x;
+    background-size: 60.84rpx 9.36rpx;
+    position: relative;
+}
+.shou_text{
+    width:100%;
+    padding:35.1rpx 46.8rpx 25.74rpx;
+    box-sizing: border-box;
+    -webkit-box-pack: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:30.42rpx;
+    color:#3c3c3c;
+}
+.shou_text .shou_l{
+    font-weight: 700;
+}
+
+/* 收货地址end */
+/* 支付方式  */
+.pay_way{
+    width:100%;
+}
+.pay_way_box{
+    margin:0 46.8rpx;
+    border-bottom: 1px solid #eee;
+    font-size: 32.76rpx;
+    height:105.3rpx;
+    line-height: 105.3rpx;
+    color: #333;
+
+    -webkit-box-pack: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pay_way image{
+    width:58.5rpx;
+    vertical-align: middle;
+    margin-right:23.4rpx;
+}
+
+/* 优惠 */
+.quan{
+    width:100%;
+}
+.quan .youhui{
+    margin:0 46.8rpx;
+    border-bottom: 1px solid #eee;
+    font-size: 28.08rpx;
+    height:105.3rpx;
+    line-height: 105.3rpx;
+    color: #333;
+
+    -webkit-box-pack: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.quan .youhui image{
+    width:46.8rpx;
+    vertical-align: middle;
+}
+.tranUp{
+    transform: rotate(180deg);
+}
+.youhui .greyfont{
+    color:#BDBDBD;
+}
+.youhui .greyfont text{
+    color:#FF6600;
+}
+/* 优惠券end */
+/* 隐藏优惠券框 */
+.huikuang{
+    width:100%;
+    background-color: #f5f5f5;
+    color:#6A6A6A;
+    font-size:28.08rpx;
+    padding:0 46.8rpx;
+    box-sizing: border-box;
+}
+.huikuang text{
+    line-height: 96.3rpx;
+}
+.huikuang view{
+    display: flex;
+}
+.huikuang input{
+    flex: 5;
+    border:1px solid #E7E7E7;
+    padding:0 35.1rpx;
+    width: 100%;
+    box-sizing: border-box;
+    height:77.22rpx;
+    color:#000;
+}
+.huikuang button{
+    flex: 1;
+    margin-left:23.4rpx;
+    font-size:28.08rpx;
+    height:77.22rpx;
+}
+/* 隐藏优惠券框end */

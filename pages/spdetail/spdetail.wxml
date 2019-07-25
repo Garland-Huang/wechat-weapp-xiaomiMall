@@ -1,0 +1,91 @@
+<!--pages/spdetail/spdetail.wxml-->
+<view class='xiang'>
+    <!-- 轮播图 -->
+    <view class="page-section page-section-spacing swiper" wx:if="{{productDetailData.swiperImg.length > 1}}">
+        <swiper style="height:{{height}}px" indicator-dots="{{indicatorDots}}">
+            <block wx:for="{{productDetailData.swiperImg}}" wx:key="{{index}}">
+                <swiper-item>
+                    <image src='{{item}}' bindload="imgloaded" class='swiper_image auto-img' mode='widthFix'></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view wx:else>
+        <image class='auto-img' mode='widthFix' bindload="imgloaded" src='{{productDetailData.swiperImg}}'></image>
+    </view>
+    <!-- 轮播图end -->
+    <view class='miaosha'>
+        <view class='miao_l'>秒杀价￥{{productDetailData.price}}</view>
+        <view class='miao_r'>距结束 {{lastTimeStr}}</view>
+    </view>
+
+    <!-- 标题 -->
+    <view class='protitle'>
+        <view class='toptitle'>
+            <text class='title'>{{productDetailData.title}}</text>
+        </view>
+        <!-- 介绍 -->
+        <view class='goods_affect'>
+            <view class='goods_message'>
+                <text>「6GB+128GB，特惠价1999元，享花呗6期免息」</text> {{productDetailData.description}}
+            </view>
+        </view>
+        <!-- 介绍end -->
+        <view class='price'>
+            <text class='nowprice'>￥{{productDetailData.price}}</text>
+            <text class='delprice'>￥4299</text>
+        </view>
+    </view>
+    <!-- 横向滚动 -->
+    <scroll-view scroll-x scroll-left="0">
+        <view class='hor'>
+            <view class='hor_box' wx:for='{{scrolls}}' wx:key="{{index}}">
+                <image src='{{item.img_url}}' mode='widthFix'></image>
+                <view class='text'>{{item.text1}}</view>
+                <view class='text'>{{item.text2}}</view>
+            </view>
+        </view>
+    </scroll-view>
+    <!-- 横向滚动end-->
+    <view class='xuanze'>
+        <view class='xuanze_box'>
+            <view>
+                <image src='../../image/yuangou.png' mode='widthFix'></image>
+            小米自营
+            <image src='../../image/yuangou.png' mode='widthFix'></image>
+            小米发货
+            <image src='../../image/yuangou.png' mode='widthFix'></image>
+            7天无理由退货
+            </view>
+            <view class='xuanze_box_r'>
+                
+            </view>
+        </view>
+    </view>
+    <view class='blank_line'></view>
+    <!-- 详细介绍 -->
+    <view class='xiangxi'>
+        <block wx:for="{{xiangxi_img}}" wx:key="{{index}}">
+            <image src='{{item}}' mode='widthFix'></image>
+        </block>
+    </view>
+    <!-- 详细介绍end -->
+</view>
+
+
+
+
+
+<!-- 底部栏 -->
+<view class='goods_footer'>
+    <view class='btn bt1'>
+        <view class='goods_car'>
+            <image src='../../image/car1.png'></image>
+            <view class='goods_num'>{{cartProductNum}}</view>
+        </view>
+    </view>
+    <view class='btn bt2' bindtap='goMall'>前往商城</view>
+    <view class='btn bt3' bindtap='addProductCart'>加入购物车</view>
+    <view class='btn bt4' bindtap='goShopCar'>前往付款</view>
+</view>
+<!-- 底部栏end -->

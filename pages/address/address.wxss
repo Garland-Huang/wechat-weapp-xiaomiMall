@@ -1,0 +1,7 @@
+.page-section view{
+    line-height: 50px;
+}
+input{
+    display: inline-block;
+    vertical-align: middle;
+}

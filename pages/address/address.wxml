@@ -1,0 +1,34 @@
+<!--pages/address/address.wxml-->
+<view>
+    <form>
+        <view class="page-section">
+            <view>
+                <view>
+                    <label>收货人：</label>
+                    <input value=' {{ addressInfo.userName }}' />
+                </view>
+            </view>
+
+            <view>
+                <label>手机号码：</label>
+                <input value=' {{ addressInfo.postalCode }}' />
+            </view>
+            <view>
+                <label>所在地区：</label>
+                <input value='  {{ addressInfo.postalCode }}{{ addressInfo.provinceName }} {{ addressInfo.cityName }} {{ addressInfo.countyName }}' />
+            </view>
+            <view>
+                <label>详细地址：</label>
+                <input value=' {{ addressInfo.detailInfo }}' />
+            </view>
+            <view>
+                <label>手机号码：</label>
+                <input value=' {{ addressInfo.telNumber }}' />
+            </view>
+        </view>
+    </form>
+
+    <view class="btn-area">
+        <button type="primary" bindtap="chooseAddress">获取收货地址</button>
+    </view>
+</view>

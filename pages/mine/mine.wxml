@@ -1,0 +1,17 @@
+<!--pages/mine/mine.wxml-->
+<view class='touxiang_box'>
+    <view class='touxiang'>
+        <image src='{{avatarUrl}}'></image>
+    </view>
+    <view class='mingzi'>{{nickName}}</view>
+</view>
+
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindtap='getUserFun'>
+    授权登录
+</button>
+
+<view class='list' wx:for="{{mode}}" wx:key="*this">
+    <view class='wode'>{{item}}
+        <image src='../../image/icon-arrow.png'></image>
+    </view>
+</view>
