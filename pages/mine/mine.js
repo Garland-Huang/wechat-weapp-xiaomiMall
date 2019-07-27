@@ -5,7 +5,6 @@ Page({
      * 页面的初始数据
      */
     data: {
-        mode: ['我的收藏', '我的订单', '我的地址', '联系客服', '关于我们'],
         canIUse: wx.canIUse('button.open-type.getUserInfo')
     },
     /**
@@ -29,6 +28,11 @@ Page({
                     })
                 }
             }
+        })
+    },
+    goOrder() {
+        wx.navigateTo({
+            url: '../../pages/order/order'
         })
     },
     /**

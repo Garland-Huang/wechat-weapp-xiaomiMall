@@ -1,5 +1,4 @@
 <!--pages/pay/pay.wxml-->
-
 <view class='pay'>
     <!-- 收货地址end -->
     <view class='shouhuo'>
@@ -13,7 +12,7 @@
     <view class='ui_line'></view>
     <!-- 支付方式 -->
     <view class='pay_way'>
-        <view class='pay_way_box' wx:for="{{payway}}" wx:key="index" bindtap='checkFun' data-index='{{index}}'>
+        <view class='pay_way_box' wx:for="{{payway}}" wx:key="{{index}}" bindtap='checkFun' data-index='{{index}}'>
             <view>
                 <image src='{{item.url}}' mode='widthFix'></image>
                 {{item.text}}
@@ -44,9 +43,47 @@
     <view class='huikuang' wx:if="{{showyouhui}}">
         <text>使用优惠券码</text>
         <view>
-            <input  bindinput="bindKeyInput" placeholder="请输入优惠券码" value='{{}}'/>
+            <input bindinput="bindKeyInput" placeholder="请输入优惠券码" value='{{}}' />
             <button type="default" bindtap='showquan'>确定</button>
         </view>
     </view>
     <view class='ui_line'></view>
+    <!-- 商品展示 -->
+    <view class='pay_way'>
+        <view class='pay_way_box' wx:for="{{orderPro[0].goods}}" wx:key="{{index}}">
+            <view>
+                <image src='{{item.proImage}}' mode='widthFix'></image>
+                {{item.proName}}
+            </view>
+            <view class='pay_way_box_r'>
+                {{item.proCount}} × {{item.proPrice}}
+            </view>
+        </view>
+    </view>
+    <!-- 商品展示end -->
+    <view class='ui_line'></view>
+    <view class='bot_price'>
+        <view>
+            商品价格：
+            <text>{{orderPro[0].total}}</text>
+        </view>
+        <view>
+            已优惠：
+            <text>0.00</text>
+        </view>
+        <view>
+            配送费用：
+            <text>0.00</text>
+        </view>
+    </view>
+    <view class='ui_line'></view>
+    <view class='fix_bot'>
+        <!-- 显示地址信息 -->
+        <view class="bot_address">配送至：{{addressData.provinceName}} {{addressData.cityName}} {{addressData.countyName}} {{addressData.detailInfo}}</view>
+        <!-- 底部 去付款 -->
+        <view class='fukuan_box'>
+            <view>共4件 合计：<text>{{orderPro[0].total}}</text></view>
+            <button class='fukuan' bindtap='goOrder'>去付款</button>
+        </view>
+    </view>
 </view>

@@ -1,15 +1,15 @@
 {
     "pages": [
+        "pages/index/index",
         "pages/address/address",
+        "pages/order/order",
         "pages/pay/pay",
         "pages/shopcar/shopcar",
-        "pages/index/index",
         "pages/spdetail/spdetail",
         "pages/categories/categories",
         "pages/mine/mine",
         "pages/logs/logs",
         "pages/xiaomi/xiaomi"
-       
     ],
     "window": {
         "backgroundTextStyle": "light",

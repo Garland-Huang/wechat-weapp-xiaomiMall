@@ -10,8 +10,8 @@
     授权登录
 </button>
 
-<view class='list' wx:for="{{mode}}" wx:key="*this">
-    <view class='wode'>{{item}}
-        <image src='../../image/icon-arrow.png'></image>
+<view class='list'>
+    <view class='wode' bindtap='goOrder'>我的订单
+        <image src='../../image/icon-arrow.png' mode='widthFix'></image>
     </view>
 </view>

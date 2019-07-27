@@ -7,9 +7,11 @@ Page({
     data: {
         noCheck: "../../image/check_normal.png",
         inCheck:"../../image/check_press.png",
-        payway: [{ url: "../../image/pay_zfb2.png", text: "支付宝", check_img: "../../image/check_normal.png" }, { url: "../../image/pay_wx.png", text: "微信支付", check_img: "../../image/check_normal.png" }, { url: "../../image/micash_wap.png", text: "小米钱包", check_img: "../../image/check_normal.png" }, { url: "../../image/pay_yl1.png", text: "银联支付", check_img: "../../image/check_normal.png"}, { url: "../../image/pay_yzf.png", text: "翼支付", check_img: "../../image/check_normal.png" }],
+        payway: [{ url: "../../image/pay_zfb2.png", text: "支付宝", check_img: "../../image/check_normal.png" }, { url: "../../image/pay_wx.png", text: "微信支付", check_img: "../../image/check_press.png" }, { url: "../../image/micash_wap.png", text: "小米钱包", check_img: "../../image/check_normal.png" }, { url: "../../image/pay_yl1.png", text: "银联支付", check_img: "../../image/check_normal.png"}, { url: "../../image/pay_yzf.png", text: "翼支付", check_img: "../../image/check_normal.png" }],
         showyouhui:false,
-        quanMa:""
+        quanMa:"",
+        orderPro:[],
+        addressData:{}
     },
     goShouPage(){
         wx.navigateTo({
@@ -18,12 +20,11 @@ Page({
     },
     // 切换单选样式
     checkFun(e){
-        console.log(e.target.dataset.index)
+        console.log(e.currentTarget.dataset.index)
         for(var i = 0;i < this.data.payway.length; i++){
             this.data.payway[i].check_img = this.data.noCheck;
-            this.data.payway[e.target.dataset.index].check_img = this.data.inCheck;
+            this.data.payway[e.currentTarget.dataset.index].check_img = this.data.inCheck;
         }
-        console.log(this.data.payway)
         this.setData({
             payway: this.data.payway
         })
@@ -61,7 +62,10 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        let addressData = wx.getStorageSync("address");
+        this.setData({
+            addressData:addressData
+        })
     },
 
     /**
@@ -75,7 +79,10 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-
+        var order = wx.getStorageSync("order");
+        this.setData({
+            orderPro: order
+        })
     },
 
     /**
@@ -111,5 +118,20 @@ Page({
      */
     onShareAppMessage: function () {
 
+    },
+    goOrder() {
+        if (wx.getStorageSync("address")){
+            wx.navigateTo({
+                url: '../../pages/order/order'
+            })
+        }else{
+            wx.showModal({
+                title: '温馨提示',
+                content: '收货地址不能为空',
+                showCancel: false,
+                confirmColor: "#FF6700"
+            })
+        }
+        
     }
 })

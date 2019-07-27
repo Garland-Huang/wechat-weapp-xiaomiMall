@@ -19,7 +19,6 @@ Page({
      */
     onLoad: function(options) {
         var shopData = wx.getStorageSync("shopCarList");
-        console.log("shopData==>", shopData)
         this.setData({
             shopList: shopData
         })
@@ -46,6 +45,10 @@ Page({
         if (shopData.length != 0) {
             this.setData({
                 isHasGoods: true
+            })
+        }else{
+            this.setData({
+                isHasGoods: false
             })
         }
         shopData.forEach(function(value) {
@@ -244,18 +247,11 @@ Page({
         var goodsIds = [];
 
         //商品字段信息
-        var keys = ['goodsId', 'goodsName', 'goodsImage', 'goodsCount', 'goodsPrice', 'goodsHotPrice', 'isHot'];
+        var keys = ['proId', 'proName', 'proImage', 'proPrice','proCount', 'addTime'];
 
         this.data.shopList.forEach(function(v) {
             if (v.isCheck) {
                 var o = {};
-                // o.goodsId = v.goodsId;
-                // o.goodsName = v.goodsName;
-                // o.goodsImage = v.goodsImage;
-                // o.goodsCount = v.goodsCount;
-                // o.goodsPrice = v.goodsPrice;
-                // o.goodsHotPrice = v.goodsHotPrice;
-                // o.isHot = v.isHot;
 
                 for (var i = 0; i < keys.length; i++) {
                     o[keys[i]] = v[keys[i]];
@@ -297,31 +293,24 @@ Page({
         wx.setStorageSync('order', orderData);
 
         //移除购车商品
-        var shopcartData = wx.getStorageSync('shopcart');
-
+        var shopcartData = wx.getStorageSync('shopCartList');
         for (var j = 0; j < shopcartData.length; j++) {
-
             if (goodsIds.length == 0) {
                 break;
             }
-
             var index = goodsIds.indexOf(shopcartData[j].goodsId);
             goodsIds.splice(index, 1);
             shopcartData.splice(index, 1);
             j--;
-
         }
-
-        wx.setStorageSync('shopcart', shopcartData);
-
-        if (shopcartData.length == 0) {
-            this.setData({
-                isHasGoods: false
-            })
-        }
-
+        wx.setStorageSync('shopCartList', shopcartData);
+        // if (shopcartData.length == 0) {
+        //     this.setData({
+        //         isHasGoods: false
+        //     })
+        // }
         wx.navigateTo({
-            url: '../../pages/order/order'
+            url: '../../pages/pay/pay'
         })
     },
     //跳转详情
