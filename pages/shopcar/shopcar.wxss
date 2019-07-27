@@ -1,0 +1,266 @@
+/* pages/shopcar/shopcar.wxss */
+
+/* 结算栏 */
+
+.auto-img{
+    width:100%;
+    display: block;
+}
+.shopcar{
+    background-color: #fff;
+}
+.xiadan {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    padding: 0 28rpx 0 28rpx;
+    box-sizing: border-box;
+    border-bottom:2rpx solid #ccc;
+    width: 100%;
+    height: 117rpx;
+    line-height: 117rpx;
+    z-index:100;
+}
+.all-select{
+    float:left;
+    margin-right:23rpx;
+}
+.all-select .t{
+    float:left;
+    margin-right:11rpx;
+}
+.all-select .check_c{
+    float:left;
+    display: block;
+    width:58rpx;
+    margin-top:-4rpx;
+}
+
+.xiadan .allprice {
+    float: left;
+}
+
+.xiadan .allprice .price {
+    font-size: 32rpx;
+    color: red;
+}
+
+.xiadan .right {
+    float: right;
+    height: 70rpx;
+    width: 187rpx;
+    line-height: 70rpx;
+    margin-top: 23rpx;
+    text-align: center;
+    background-color: #ff7e3a;
+    border-radius: 11rpx;
+    color: #fff;
+}
+
+/* 结算栏end */
+
+/* 商品栏 */
+/* 没有商品时展示栏 */
+.pro_top{
+  font-size: 37.44rpx;
+}
+.pro_top .youhui{
+    height: 121.68rpx;
+    line-height: 121.68rpx;
+    -webkit-box-pack: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 65.52rpx;
+    color: rgba(0,0,0,.87);
+}
+.pro_top .youhui_r{
+    font-size: 28.08rpx;
+    color: rgba(0,0,0,.54);
+}
+.pro_top .nullshopcar{
+    background-color: #EBEBEB;
+    padding:23.4rpx;
+    font-size: 28.08rpx;
+    -webkit-box-pack: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.pro_top .nullshopcar image{
+    width:93.6rpx;
+    margin-top:3rpx;
+}
+.pro_top .nullshopcar text{
+    margin:0 23.4rpx;
+    color: rgba(0,0,0,.27);
+    line-height: 93.6rpx;
+}
+.pro_top .nullshopcar .guang{
+    border: 2.34rpx solid rgba(0,0,0,.15);
+    box-sizing: border-box;
+    height: 58.5rpx;
+    line-height: 58.5rpx;
+    margin-top:18.72rpx;
+    padding: 0 28.08rpx;
+    font-style: normal;
+}
+/* 没有商品时展示栏end */
+
+.shop {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding:11rpx 0;
+    border-bottom: 2rpx solid #e7e7eb;
+}
+
+.shop .check_box{
+    float:left;
+    width:93rpx;
+    margin-top:58rpx;
+}
+.shop .check_box .check{
+    display: block;
+    width:58rpx;
+    margin:0 auto;
+}
+
+.shop .car_left{
+    float:left;
+    width: 187rpx;
+}
+.shop .car_left image {
+    width: 187rpx;
+    height: 187rpx;
+}
+
+.shop .info {
+    width:calc(100% - 187rpx - 94rpx - 35rpx - 65rpx);
+    float:left;
+    margin-left: 35rpx;
+    
+}
+
+.shop .info .title {
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.shop .info .price {
+    margin-top:11rpx;
+    line-height: 70rpx;
+    font-size:32rpx;
+    color: #f00;
+}
+
+.shop .info .account_box {
+    display: block;
+    height: 65rpx;
+    line-height: 65rpx;
+}
+
+.shop .info .account_box .account {
+    float: left;
+    height: 67rpx;
+    text-align: center;
+}
+
+.shop .info .account_box .account .jian, .shop .info .account_box .account .add {
+    float: left;
+    display: block;
+    width: 60rpx;
+    height: 60rpx;
+    background-color: #fff;
+    border: 2rpx solid #b2b2b2;
+}
+
+.shop .info .account_box .account text.number {
+    float: left;
+    width: 93rpx;
+    height: 60rpx;
+    margin-top: 2rpx;
+    background-color: #fff;
+    border-top: 2rpx solid #b2b2b2;
+    border-bottom: 2rpx solid #b2b2b2;
+}
+
+.shop .remove {
+    float: right;
+    width: 65rpx;
+    margin-top:58rpx;
+}
+.shop .remove image{
+    display: block;
+    width:58rpx;
+    height:58rpx;
+    margin:0 auto;
+}
+/* 商品栏end */
+
+/* 推荐 */
+.product {
+    width: 100%;
+    /* padding-left:14rpx; */
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom:10px;
+}
+.product .product_box {
+    display: inline-block;
+    background-color: #F6F6F6;
+    width: 50%;
+    padding-right:14rpx;
+    box-sizing: border-box;
+}
+.product .product_box .imgBox{
+    width:100%;
+}
+.product .product_box .imgBox image {
+    background-color: #f2f2f2;
+    display: block;
+    width: 100%;
+}
+.product .product_box .textBox{
+    padding:18rpx 32rpx;
+    box-sizing: border-box;
+}
+.product .product_box .textBox  text {
+    display: block;
+    text-align: center;
+}
+
+.product .product_box .title {
+    font-size: 37rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgba(0,0,0,.87);
+}
+
+.product .product_box .introduce {
+    font-size: 30rpx;
+    color: #929292;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 60rpx;
+}
+
+.product .product_box .price {
+    font-size: 32rpx;
+    color: #ea625b;
+    line-height: 46rpx;
+}
+.product .product_box .buybtn{
+    margin: 0 auto;
+    width: 234rpx;
+    background: #ea625b;
+    border-radius: 6rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 28rpx;
+    padding: 18rpx 0;
+    font-weight: 700;
+}
+/* 推荐end */

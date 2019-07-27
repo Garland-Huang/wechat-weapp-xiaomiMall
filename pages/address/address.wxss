@@ -1,0 +1,62 @@
+.address {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.page-section view {
+    font-size: 32.76rpx;
+    color: #3c3c3c;
+}
+
+.page-section .li_box {
+    padding: 23.4rpx 35.1rpx;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.page-section .li_box picker {
+    display: inline-block;
+}
+
+.page-section label {
+    vertical-align: middle;
+}
+
+.page-section input {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+/* 获取收获地址 */
+
+.getAddress {
+    margin-top: 23.4rpx;
+}
+
+.getAddress button {
+    display: block;
+    width:351rpx;
+    margin: 0 auto;
+}
+
+/* 底部地址 */
+
+.btn-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.btn-area button {
+    border-radius: 0;
+    height: 117rpx;
+    line-height: 117rpx;
+    background-color: #ff6700;
+    font-size: 35.1rpx;
+    color: #fff;
+}

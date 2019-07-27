@@ -1,0 +1,37 @@
+<!--pages/order/order.wxml-->
+<view class='order'>
+    <view class='card' wx:for="{{order}}" wx:key="{{index}}">
+            <view class='title'>
+                <view class='title_l'>
+                    <view>订单号:</view> 
+                    <view>{{item.orderId}}</view>
+                </view>
+                <view class='title_r'>
+                    <view>{{item.orderTime1}}</view>
+                    <view>{{item.orderTime2}}</view>
+                </view>
+            </view>
+            <view class='content' wx:for="{{item.goods}}" wx:key="{{index}}">
+                <view class='content1' >
+                    <image src='{{item.proImage}}' mode='widthFix'></image>
+                </view>
+                <view class='content2'>
+                    {{item.proName}}
+                </view>
+                <view class='content3'>
+                    ￥{{item.proPrice}} ×{{item.proCount}}
+                </view>
+            </view>
+
+
+        <view class='yunfeixian pad'>
+            运费险
+            <text> 确保收获前退换货可理赔</text>
+        </view>
+        <view class='pro_price pad'>
+            共4件商品 合计：￥
+            <text>{{item.total}}</text>
+        </view>
+    </view>
+
+</view>

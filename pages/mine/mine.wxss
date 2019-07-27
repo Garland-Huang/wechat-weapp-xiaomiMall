@@ -1,0 +1,51 @@
+/* pages/mine/mine.wxss */
+.touxiang_box{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom:23rpx;
+    padding-top:46rpx;
+    padding-bottom:53rpx;
+}
+.touxiang_box .touxiang{
+    width: 210rpx;
+    height: 210rpx;
+    margin:0 auto;
+    padding-bottom:51rpx;
+    
+}
+.touxiang_box .touxiang image{
+    width: 210rpx;
+    height: 210rpx;
+    border-radius:50%;
+}
+.touxiang_box .mingzi{
+    text-align: center;
+    font-size:37rpx;
+    color:#937269;
+    
+}
+
+
+/* 列表 */
+.list{
+    width: 100%;
+    border-top:1px solid #e5e5e5;
+    background-color: #fff;
+}
+.list .wode{
+    height: 105rpx;
+    line-height: 105rpx;
+    padding-left:23rpx;
+    border-bottom:2rpx solid #e5e5e5;
+    font-size:32rpx;
+    color:#000;
+    position:relative;
+}
+.list .wode image{
+    position:absolute;
+    right:32rpx;
+    top:32rpx;
+    width: 37rpx;
+    height:37rpx;
+}
+/* 列表end */
