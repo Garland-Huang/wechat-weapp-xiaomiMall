@@ -19,9 +19,9 @@
 
 ![xq1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/xq1.png?raw=true)![xq2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/xq2.png?raw=true)
 
-![pay1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/pay1.png?raw=true)![pay2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/pay2.png?raw=true)
-
 ![shopcar1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shopcar1.png?raw=true)![shopcar2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shopcar2.png?raw=true)
+
+![pay1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/pay1.png?raw=true)![pay2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/pay2.png?raw=true)
 
 ![order](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/order.png?raw=true)![fenlei](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/fenlei.png?raw=true)
 
