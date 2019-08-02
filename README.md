@@ -15,7 +15,7 @@
 
 ### 项目截图
 
-![shouye1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye1.png?raw=true![shouye2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye2.png?raw=true)
+![shouye1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye1.png?raw=true)![shouye2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye2.png?raw=true)
 
 ![xq1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/xq1.png?raw=true)![xq2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/xq2.png?raw=true)
 
