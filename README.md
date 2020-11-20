@@ -2,9 +2,7 @@
 
 #### 演示地址
 
-打开微信扫一扫
-
-![](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/myMi.jpg?raw=true)
+![打开微信扫一扫](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/myMi.jpg?raw=true)
 
 #### 目录结构
 
