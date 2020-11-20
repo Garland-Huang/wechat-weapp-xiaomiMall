@@ -1,19 +1,19 @@
-# 仿小米商城微信小程序
+### 仿小米商城微信小程序
 
-### 演示地址
+#### 演示地址
 
 打开微信扫一扫
 
 ![](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/myMi.jpg?raw=true)
 
-### 目录结构
+#### 目录结构
 
 - image —  存放放小图片logo
 - pages — 存放页面相关文件
 - style — 存放独立wxss样式文件，可import引入
 - utils — 存放全局文件，require引入
 
-### 项目截图
+#### 项目截图
 
 ![shouye1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye1.png?raw=true)![shouye2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye2.png?raw=true)
 
