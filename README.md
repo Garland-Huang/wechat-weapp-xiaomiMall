@@ -13,14 +13,24 @@
 
 #### 项目截图
 
-![shouye1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye1.png?raw=true)![shouye2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye2.png?raw=true)
+![首页1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye1.png?raw=true)
 
-![xq1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/xq1.png?raw=true)![xq2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/xq2.png?raw=true)
+![首页2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shouye2.png?raw=true)
 
-![shopcar1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shopcar1.png?raw=true)![shopcar2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shopcar2.png?raw=true)
+![详情1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/xq1.png?raw=true)
 
-![pay1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/pay1.png?raw=true)![pay2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/pay2.png?raw=true)
+![详情2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/xq2.png?raw=true)
 
-![order](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/order.png?raw=true)![fenlei](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/fenlei.png?raw=true)
+![购物车1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shopcar1.png?raw=true)
+
+![购物车2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/shopcar2.png?raw=true)
+
+![支付1](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/pay1.png?raw=true)
+
+![支付2](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/pay2.png?raw=true)
+
+![订单](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/order.png?raw=true)
+
+![分类](https://github.com/no-choice/wechat-weapp-xiaomiMall/blob/master/tu/fenlei.png?raw=true)
 
 
